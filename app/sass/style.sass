@@ -46,22 +46,22 @@ i
   height: 100vh
   margin: 0 auto
 
-.container
-  max-width: 1430px
-  margin: 0 auto
-  position: relative     
+   
 
 /* Top line*/
 .topline-wrap
   background: #0E0E0E
 
 .topline
+  margin: 0 auto
+  max-width: 1430px
+
+.contain
   display: flex
   align-items: center
   justify-content: space-between
   position: relative
   height: 64px
-  margin: 0 auto
 
 .topline-logo
   font-family: 'PT Sans', sans-serif
@@ -101,7 +101,8 @@ i
   align-items: center
   justify-content: space-between
   position: relative
-  margin: 0 auto 
+  margin: 0 auto
+  max-width: 1430px 
 
 
 /* Navbar*/
@@ -109,8 +110,15 @@ i
   padding: 0
   position: absolute
   top: 50px
-  z-index: 10 
+  z-index: 10
+  display: flex 
+  justify-content: space-between
+  width: 100%
+  padding: 0 30px 0 0
 
+.navbar-expand-lg .navbar-nav
+  justify-content: flex-end
+  width: 100%
 .navbar-text
  font-size: 30px
  font-family: 'BebasBold', sans-serif
@@ -154,7 +162,7 @@ i
 
 
 .navbar-expand-lg .navbar-collapse
-  margin: 0 130px 0 210px
+  margin-right: 130px
 
 .phone
   font-size: 24px
